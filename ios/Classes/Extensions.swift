@@ -27,7 +27,7 @@ extension CLLocation {
                 "speed": self.speed,
                 "horizontalAccuracy": self.horizontalAccuracy,
                 "verticalAccuracy": self.verticalAccuracy,
-                "timestamp": Int(self.timestamp.timeIntervalSince1970 * 1000)
+                "timestamp": Int64(self.timestamp.timeIntervalSince1970 * 1000)
         ]
     }
 }
@@ -40,7 +40,7 @@ extension CLHeading {
                 "x": self.x,
                 "y": self.y,
                 "z": self.z,
-                "timestamp": Int(self.timestamp.timeIntervalSince1970 * 1000),
+                "timestamp": Int64(self.timestamp.timeIntervalSince1970 * 1000),
         ]
     }
 }
