@@ -318,7 +318,9 @@ final class MapboxMapController
       }
       
       if (myLocationEnabled) {
-        updateMyLocationEnabled();
+        if (hasLocationPermission()) {
+          updateMyLocationEnabled();
+        }
       }
       // needs to be placed after SymbolManager#addClickListener,
       // is fixed with 0.6.0 of annotations plugin
